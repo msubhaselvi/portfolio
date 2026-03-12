@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome - Subha Selvi</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #d0eaff, #ffffff);
+      color: #333;
+      font-size: 1.05rem;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ddd;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #ffd700;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    main {
+      flex: 1;
+      padding: 50px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      padding: 50px 40px;
+      width: 100%;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      font-size: 2.2rem;
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .card p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio 😊</h1>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Hi, I'm M. Subha Selvi 👋</h2>
+      <p>
+        Welcome to my personal portfolio.Explore my projects, education, and skills!
+      </p>
+    </div>
+  </main>
+  <footer>
+    <p>All rights reserved © 2025</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills - Subha Selvi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #d0eaff, #ffffff);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ddd;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    main {
+      flex: 1;
+      max-width: 20000px; /* Wider main box */
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 100px 120px; /* More spacious */
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 0.7s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      text-align: center;
+      color: #003366;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    ul.skills-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    ul.skills-list li {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 20px 34px;
+      border-left: 6px solid #003366;
+      background: #f0f8ff;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    ul.skills-list li:hover {
+      background: #d6ebff;
+      transform: scale(1.02);
+    }
+
+    ul.skills-list i {
+      color: #003366;
+      font-size: 1.5rem;
+      min-width: 200px;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Skills 👩🏻‍💻</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+      <a href="education.html">Education</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Technical Skills</h2>
+    <ul class="skills-list">
+      <li><i class="fa-brands fa-java"></i> Java</li>
+      <li><i class="fa-solid fa-code"></i> C</li>
+      <li><i class="fa-solid fa-code"></i> C++</li>
+      <li><i class="fa-solid fa-database"></i> RDBMS</li>
+      <li><i class="fa-brands fa-python"></i> Python</li>
+      <li><i class="fa-brands fa-html5"></i> HTML / CSS / JavaScript</li>
+      <li><i class="fa-brands fa-react"></i> React.js</li>
+      <!-- <li><i class="fa-solid fa-leaf"></i> Spring Boot</li> -->
+      <li><i class="fa-solid fa-database"></i> MySQL & PostgreSQL</li>
+      <li><i class="fa-brands fa-github"></i> Git & GitHub</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>All rights reserved © 2025</p>
+  </footer>
+</body>
+</html>

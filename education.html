@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education - Subha Selvi</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #d0eaff, #ffffff);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ddd;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #ffd700;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    main {
+      flex: 1;
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      padding: 40px;
+      width: 100%;
+    }
+
+    .card h2 {
+      text-align: center;
+      color: #003366;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .education-block {
+      margin-bottom: 25px;
+      padding: 20px;
+      background-color: #f0faff;
+      border-left: 6px solid #003366;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    .education-block:hover {
+      background-color: #e1f0ff;
+      transform: translateY(-2px);
+    }
+
+    .education-block h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #003366;
+    }
+
+    .education-block p {
+      margin: 5px 0;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Education 📘</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Educational Background</h2>
+
+      <div class="education-block">
+        <h3>🎓 M.Sc. Computer Science</h3>
+        <p><strong>College:</strong> St. Xavier's College (Autonomous), Palayamkottai</p>
+        <p><strong>Year:</strong> 2024 – 2026</p>
+        <p><strong>University:</strong> Manonmaniam Sundaranar University</p>
+      </div>
+
+      <div class="education-block">
+        <h3>🎓 B.Sc. Computer Science</h3>
+        <p><strong>College:</strong> Sri Sarada College for Women (Autonomous), Tirunelveli</p>
+        <p><strong>Year:</strong> 2021 – 2024</p>
+        <p><strong>University:</strong> Manonmaniam Sundaranar University</p>
+        <p><strong>CGPA:</strong>8.32/10</p>
+      </div>
+
+      <div class="education-block">
+        <h3>🏫 HSC (12th)</h3>
+        <p><strong>School:</strong> Sri Jayendra Saraswathi Swamigal Golden Jubliee Matric Hr. Sec. School</p>
+        <p><strong>Year:</strong> 2020 – 2021</p>
+        <p><strong>Board:</strong> State Board</p>
+        <p><strong>Score:</strong> 88%</p>
+      </div>
+
+      <div class="education-block">
+        <h3>🏫 SSLC (10th)</h3>
+        <p><strong>School:</strong> Sri Jayendra Saraswathi Swamigal Golden Jubliee Matric Hr. Sec. School</p>
+        <p><strong>Year:</strong> 2018 – 2019</p>
+        <p><strong>Board:</strong> State Board</p>
+        <p><strong>Score:</strong> 87%</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>All rights reserved © 2025</p>
+  </footer>
+</body>
+</html>
